@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>Jogo da Velha</h1>
+        <p class="descricao">Projeto simples feito com HTML, CSS e JavaScript.</p>
+
+        <!-- Placar do jogo -->
+        <section class="placar">
+            <div>
+                <span>Jogador X</span>
+                <strong id="pontos-x">0</strong>
+            </div>
+
+            <div>
+                <span>Empates</span>
+                <strong id="pontos-empate">0</strong>
+            </div>
+
+            <div>
+                <span>Jogador O</span>
+                <strong id="pontos-o">0</strong>
+            </div>
+        </section>
+
+        <!-- Mostra de quem é a vez -->
+        <p id="status" class="status">Vez do jogador X</p>
+
+        <!-- Tabuleiro -->
+        <section class="tabuleiro">
+            <button class="celula" data-index="0"></button>
+            <button class="celula" data-index="1"></button>
+            <button class="celula" data-index="2"></button>
+
+            <button class="celula" data-index="3"></button>
+            <button class="celula" data-index="4"></button>
+            <button class="celula" data-index="5"></button>
+
+            <button class="celula" data-index="6"></button>
+            <button class="celula" data-index="7"></button>
+            <button class="celula" data-index="8"></button>
+        </section>
+
+        <!-- Botões de ação -->
+        <div class="botoes">
+            <button id="btn-reiniciar" class="botao">Nova rodada</button>
+            <button id="btn-resetar" class="botao botao-secundario">Resetar placar</button>
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

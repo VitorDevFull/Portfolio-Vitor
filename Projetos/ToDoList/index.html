@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="app">
+    <section class="todo">
+
+      <header class="todo-header">
+        <h1>📝 Lista de Tarefas</h1>
+        <p>Organize suas tarefas do dia a dia</p>
+      </header>
+
+      <!-- formulario pra adicionar tarefa -->
+      <form id="task-form" class="task-form">
+        <input
+          id="task-input"
+          type="text"
+          placeholder="Digite uma nova tarefa..."
+          autocomplete="off"
+        >
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <!-- contador de tarefas -->
+      <div class="task-info">
+        <span>Total: <strong id="task-count">0</strong></span>
+        <span>Concluídas: <strong id="completed-count">0</strong></span>
+      </div>
+
+      <!-- lista onde as tarefas vão aparecer -->
+      <ul id="task-list" class="task-list"></ul>
+
+      <!-- aparece quando nao tem nenhuma tarefa -->
+      <div id="empty-msg" class="empty-msg">
+        <p>Nenhuma tarefa por aqui ainda! 🎉</p>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

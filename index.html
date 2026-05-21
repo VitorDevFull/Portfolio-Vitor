@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Vitor Cruz — Desenvolvedor Web Front-end, HTML, CSS e JavaScript.">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Meu Portfólio</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#habilidades" class="menu-link">Habilidades</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contatos</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="inicio" class="cabecalho">
+        <img src="img/fotovitor1.png" alt="Foto de Perfil do Vitor" class="foto-perfil">
+        <h1>Vitor Cruz do Nascimento</h1>
+        <p class="cabecalho-sub-titulo">Assistente de TI | Estudante de Desenvolvimento Web</p>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Sou formado em Análise e Desenvolvimento de Sistemas e estou em transição para a área de Tecnologia da
+                Informação. Tenho experiência com sistemas hospitalares, rotinas administrativas, suporte a usuários e
+                resolução de problemas. Atualmente estou desenvolvendo projetos práticos com HTML, CSS e JavaScript para
+                fortalecer meu portfólio e conquistar minha primeira oportunidade na área de TI.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <a href="Projetos/ToDoList/index.html" target="_blank" rel="noopener noreferrer" class="link-projeto">
+                <div class="projetos-card">
+                    <img src="img/ToDoList.png" alt="Projeto To-Do List" class="projetos-imagem">
+                    <div class="caixa-textos-projetos">
+                        <h3 class="info-projetos">Lista de Tarefas</h3>
+                        <p class="paragrafo-projetos">
+                            Aplicação para adicionar, concluir e remover tarefas, utilizando HTML, CSS, JavaScript e
+                            localStorage.
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="Projetos/Calculadora_v1/index.html" target="_blank" rel="noopener noreferrer" class="link-projeto">
+                <div class="projetos-card">
+                    <img src="img/projeto2.png" alt="Projeto Calculadora Simples" class="projetos-imagem">
+                    <div class="caixa-textos-projetos">
+                        <h3 class="info-projetos">Calculadora Simples</h3>
+                        <p class="paragrafo-projetos">
+                            Calculadora desenvolvida com JavaScript, utilizando manipulação do DOM e lógica de
+                            operadores matemáticos.
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="Projetos/JogoDaVelha/index.html" target="_blank" rel="noopener noreferrer" class="link-projeto">
+                <div class="projetos-card">
+                    <img src="img/projeto3.png" alt="Projeto Jogo da Velha" class="projetos-imagem">
+                    <div class="caixa-textos-projetos">
+                        <h3 class="info-projetos">Jogo da Velha</h3>
+                        <p class="paragrafo-projetos">
+                            Jogo da Velha desenvolvido com HTML, CSS e JavaScript, com alternância de jogadores,
+                            verificação de vitória, empate e placar.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="habilidades" class="habilidades">
+        <h2 class="projetos-titulo">Habilidades</h2>
+        <div class="habilidades-caixa">
+
+            <div class="habilidades-card">
+                <img src="img/HTML5.png" alt="html" class="habilidades-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">HTML</h3>
+                    <p class="paragrafo-projetos">Estruturação de páginas web</p>
+                </div>
+            </div>
+
+            <div class="habilidades-card">
+                <img src="img/CSS3.png" alt="CSS3" class="habilidades-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">CSS3</h3>
+                    <p class="paragrafo-projetos">Estilização e responsividade</p>
+                </div>
+            </div>
+
+            <div class="habilidades-card">
+                <img src="img/JS.png" alt="JavaScript" class="habilidades-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">JavaScript</h3>
+                    <p class="paragrafo-projetos">Lógica e interatividade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input type="text" placeholder="Nome" class="campo-form" id="nome" required>
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="4" id="mensagem"
+                    required></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+
+        <div class="redes-sociais">
+            <a href="https://github.com/VitorDevFull" target="_blank" rel="noopener noreferrer" class="rede-link">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+                    class="rede-icone-github">
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/vitor-cruz-928353314" target="_blank" rel="noopener noreferrer"
+                class="rede-link">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    alt="LinkedIn" class="rede-icone-linkedin">
+                LinkedIn
+            </a>
+        </div>
+    </section>
+    <footer class="rodape">
+        <p>© 2026 Vitor Cruz do Nascimento. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
