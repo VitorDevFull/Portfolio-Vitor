@@ -390,4 +390,11 @@ h1 {
         gap: 3rem;
     }
 
+    .projetos-titulo {
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
 }
